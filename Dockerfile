@@ -19,9 +19,7 @@ ENV PATH="${PATH}:/code/bin:/code/node_modules/.bin"
 COPY --from=build /code /code/
 
 # mainnet or testnet
-#EXPOSE 8334 
-EXPOSE 8333 8332 
-#EXPOSE 18334 18333 18332
+EXPOSE 8334 8333 8332 18334 18333 18332
 
 CMD "bcoin"
 
